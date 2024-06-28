@@ -1,0 +1,33 @@
+html {
+    background-color: #00539f;
+    font-size: 10px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+    font-family: "Playwrite US Modern", cursive; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+  }
+  
+  h1{
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 3px black; /*primer valor desplaz horizontal a la derecha(negativo izquierda),
+    2o valo despl vertical hacia abajo (negativo hacia arriba) 
+    3er valor radio de desenfoque, valor grande mas borroso entre o y 10*/
+  }
+
+  p,
+  li{
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+  body {
+    width: 600px; /* hará que tenga 600 pixeles de ancho*/
+    margin: 0 auto;  
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px; /*el orden siempre: arriba, derecha, abajo, izquierda*/
+    border: 5px solid black; /*borde de 5 px de ancho, continui de color negro alrededor del elemento body*/
+  }
+
+  img{
+    display: block;
+    margin: 0 auto;
+  }
