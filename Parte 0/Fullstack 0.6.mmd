@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant browser
+    participant server
+    
+    browser->>server: User fills the blank and click send
+    Note right of browser: Post request: new_note_spa (includes note content & date), content-type: application/json
+    activate server
+    server-->>browser: Post 201
+    Note right of  browser: Get element and register event handler and avoid request GET
+    Note right of browser: Event handler creates a new note, and add to the list notes.push(note)
+    Note right of browser: Then, re-render the notes list & send the note to the server
+    deactivate server
+
+   
